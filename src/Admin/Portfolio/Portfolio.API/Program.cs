@@ -1,4 +1,7 @@
 
+using Portfolio.Application;
+using Portfolio.Infrastructure;
+
 namespace Portfolio.API
 {
     public class Program
@@ -8,6 +11,8 @@ namespace Portfolio.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddPortfolioApplicationDependencyInjection();
+            builder.Services.AddPortfolioInfrastructureDependencyInjection(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
