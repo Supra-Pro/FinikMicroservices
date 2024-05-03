@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using News.Application.UseCases.NewsCases.Commands;
 using News.Application.UseCases.NewsCases.Queries;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Portfolio.Application.UseCases.PortfolioCases.Handlers.CommandHandler
+﻿namespace Portfolio.Application.UseCases.PortfolioCases.Handlers.CommandHandler
 {
     internal class GetByCategoryCommandHandler
     {

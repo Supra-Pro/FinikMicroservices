@@ -3,11 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Portfolio.Application.Abstractions;
 using Portfolio.Application.UseCases.PortfolioCases.Commands;
 using Portfolio.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Portfolio.Application.UseCases.PortfolioCases.Handlers.CommandHandler
 {
@@ -22,7 +17,7 @@ namespace Portfolio.Application.UseCases.PortfolioCases.Handlers.CommandHandler
 
         public async Task<ResponseModel> Handle(UpdatePortfolioCommand request, CancellationToken cancellationToken)
         {
-            var Portfolio = await _context.Portfolios.FirstOrDefaultAsync(x => x.Id ==  request.Id);
+            var Portfolio = await _context.Portfolios.FirstOrDefaultAsync(x => x.Id == request.Id);
 
             if (Portfolio != null)
             {
