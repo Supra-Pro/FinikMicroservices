@@ -11,5 +11,6 @@ namespace News.Application.UseCases.NewsCases.Commands
         public string PostedDate { get; set; }
         public string NewsTitle { get; set; }
         public string NewsBody { get; set; }
+        
     }
 }

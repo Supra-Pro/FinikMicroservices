@@ -1,24 +1,28 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Portfolio.Application.UseCases.PortfolioCases.Commands;
-using Portfolio.Application.UseCases.PortfolioCases.Queries;
-using Portfolio.Domain.Entities;
+using Projects.Application.UseCases.ProjectCases.Commands;
+using Projects.Application.UseCases.ProjectCases.Queries;
+using Projects.Domain.Eintities;
+using System.Diagnostics.CodeAnalysis;
+using System.Formats.Asn1;
+using System.Runtime.CompilerServices;
 
-namespace Portfolio.API.Controllers
+namespace Projects.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class PortfolioController : ControllerBase
+    public class ProjectsController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public PortfolioController(IMediator mediator)
+        public ProjectsController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreatePortfolio(CreatePortfolioCommand command)
+        public async Task<ActionResult> CreateProject(CreateProjectCommand command)
         {
             var result = await _mediator.Send(command);
 
@@ -26,24 +30,24 @@ namespace Portfolio.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PortfolioModel>>> GetAllPortfolios()
+        public async Task<ActionResult<List<ProjectsModel>>> GetAllProjects()
         {
-            var result = await _mediator.Send(new GetAllPortfoliosQuery());
+            var result = await _mediator.Send(new GetAllProjectsQuery());
 
-            return Ok(result);
+            return result;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPortfoliosByCategory([FromBody] string category)
+        public async Task<IActionResult> GetProjectsByCategory([FromBody] string category)
         {
             try
             {
-                var query = new GetPortfoliosByCategoryQuery { Category = category };
+                var query = new GetProjectsByCategoryQuery { Category = category };
                 var projects = await _mediator.Send(query);
 
                 return Ok(projects);
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 return StatusCode(500, $"error {ex.Message}");
             }
@@ -58,7 +62,7 @@ namespace Portfolio.API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdatePortfolio(UpdatePortfolioCommand command)
+        public async Task<ActionResult> UpdateProjects(UpdateProjectCommand command)
         {
             var result = await _mediator.Send(command);
 
@@ -66,7 +70,7 @@ namespace Portfolio.API.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult> DeletePortfolio(DeleteportfolioCommand command)
+        public async Task<ActionResult> DeleteProject(DeleteProjectCommand command)
         {
             var result = await _mediator.Send(command);
 

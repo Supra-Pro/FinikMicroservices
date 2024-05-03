@@ -34,7 +34,7 @@ namespace Dealers.Application.UseCases.DealerCases.Handlers.CommandHandlers
 
             return new ResponseModel
             {
-                message = "The News is not found!",
+                message = "The Dealer is not found!",
                 StatusCode = 400
             };
         }

@@ -73,6 +73,30 @@
       "UpstreamHttpMethod": [ "DELETE" ]
     }, //News tugagan joyi
     {
+      "DownstreamPathTemplate": "/api/Portfolio/GetAllPortfolios",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7163
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Portfolio/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Portfolio/GetPortfoliosByCategory",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7163
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Portfolio/GetByCategory",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/Portfolio",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -85,7 +109,7 @@
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Portfolio",
+      "DownstreamPathTemplate": "/api/Portfolio/CreatePortfolio",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -97,7 +121,7 @@
       "UpstreamHttpMethod": [ "POST" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Portfolio",
+      "DownstreamPathTemplate": "/api/Portfolio/UpdatePortfolio",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -105,11 +129,11 @@
           "Port": 7163
         }
       ],
-      "UpstreamPathTemplate": "/api/Portfolio/Update",
+      "UpstreamPathTemplate": "/api/Portfolio/UpdatePortfolio",
       "UpstreamHttpMethod": [ "PUT" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Portfolio",
+      "DownstreamPathTemplate": "/api/Portfolio/DeletePortfolio",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -117,7 +141,7 @@
           "Port": 7163
         }
       ],
-      "UpstreamPathTemplate": "/api/Portfolio/Delete",
+      "UpstreamPathTemplate": "/api/Portfolio/DeletePortfolio",
       "UpstreamHttpMethod": [ "DELETE" ]
     }, //Portfolio tugagan joyi
     {
@@ -239,7 +263,79 @@
       ],
       "UpstreamPathTemplate": "/api/Dealers/Delete",
       "UpstreamHttpMethod": [ "DELETE" ]
-    } //Dealers tugagan joyi
+    }, //Dealers tugagan joyi
+    {
+      "DownstreamPathTemplate": "/api/Projects/GetAllProjects",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projects/GetProjectsByCategory",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/GetProjectsByCategory",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projects/GetAllCategories",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/GetAllCategories",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projects/CreateProject",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/Create",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projects/UpdateProjects",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/Update",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projects/DeleteProject",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7052
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Projects/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5000"
