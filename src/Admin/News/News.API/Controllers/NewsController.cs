@@ -6,7 +6,7 @@ using News.Domain.Entities;
 
 namespace News.API.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class NewsController : ControllerBase
     {
@@ -29,14 +29,6 @@ namespace News.API.Controllers
         public async Task<ActionResult<List<NewsModel>>> GetAllNews()
         {
             var result = await mediator.Send(new GetAllNewsQuery());
-
-            return Ok(result);
-        }
-
-        [HttpGet]
-        public async Task<ActionResult<List<NewsModel>>> GetByCategoryNews(GetByCategoryNewsCommand command)
-        {
-            var result = await mediator.Send(command);
 
             return Ok(result);
         }
