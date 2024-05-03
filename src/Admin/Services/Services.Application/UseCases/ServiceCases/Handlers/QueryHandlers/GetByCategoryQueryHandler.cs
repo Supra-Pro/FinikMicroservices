@@ -21,19 +21,19 @@ namespace Services.Application.UseCases.ServiceCases.Handlers.QueryHandlers
 
         public async Task<List<ServiceModel>> Handle(GetByCategoryQuery request, CancellationToken cancellationToken)
         {
-            // Retrieve services by category from the database using Entity Framework Core
+
             var servicesByCategory = await _context.Services
                 .Where(x => x.Category == request.Category)
                 .ToListAsync(cancellationToken);
 
-            // Map the retrieved services to ServiceModel objects
+            
             var serviceModels = servicesByCategory.Select(x => new ServiceModel
             {
                 Id = x.Id,
                 Category = x.Category,
                 Title = x.Title,
                 Description = x.Description
-                // Map other properties as needed
+              
             }).ToList();
 
             return serviceModels;

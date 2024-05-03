@@ -6,7 +6,7 @@ using News.Domain.Entities;
 
 namespace News.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class NewsController : ControllerBase
     {
@@ -31,6 +31,30 @@ namespace News.API.Controllers
             var result = await mediator.Send(new GetAllNewsQuery());
 
             return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetNewsByCategory([FromBody] string category)
+        {
+            try
+            {
+                var query = new GetByCategoryNewsQuery { Category = category };
+                var news = await mediator.Send(query);
+
+                return Ok(news);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCategories()
+        {
+            var query = new GetAllCategoriesQuery();
+            var categories = await mediator.Send(query);
+            return Ok(categories);
         }
 
         [HttpPut]
