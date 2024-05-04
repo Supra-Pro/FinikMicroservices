@@ -1,4 +1,7 @@
 
+using ContactPageRequests.Application;
+using ContactPageRequests.Infrastructure;
+
 namespace ContactPageRequests.API
 {
     public class Program
@@ -8,6 +11,8 @@ namespace ContactPageRequests.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddContactPageApplication();
+            builder.Services.AddContactPageRequestsInfrastructure(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
