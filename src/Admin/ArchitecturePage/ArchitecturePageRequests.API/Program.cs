@@ -1,4 +1,7 @@
 
+using ArchitecturePageRequests.Application;
+using ArchitecturePageRequests.Infrastructure;
+
 namespace ArchitecturePageRequests.API
 {
     public class Program
@@ -8,6 +11,8 @@ namespace ArchitecturePageRequests.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddArchitecturePageApplication();
+            builder.Services.AddArchitecturePageRequestsInfrastructure(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
