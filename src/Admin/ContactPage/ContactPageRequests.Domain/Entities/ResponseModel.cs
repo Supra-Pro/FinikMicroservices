@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ContactPageRequests.Domain.Entities
+﻿namespace ContactPageRequests.Domain.Entities
 {
     public class ResponseModel
     {

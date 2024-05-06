@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AboutPageRequests.Domain.Entities
+﻿namespace AboutPageRequests.Domain.Entities
 {
     public class RequestModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string CityOfImplementation {  get; set; }
+        public string CityOfImplementation { get; set; }
         public string PhoneNumber { get; set; }
-        public string PlannedSales {  get; set; }
+        public string PlannedSales { get; set; }
     }
 }

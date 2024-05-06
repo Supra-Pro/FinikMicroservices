@@ -2,16 +2,10 @@
 using ArchitecturePageRequests.Application.UseCases.Commands;
 using ArchitecturePageRequests.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArchitecturePageRequests.Application.UseCases.Handlers.CommandHandlers
 {
-    
+
     public class CreateRequestCommandHandler : IRequestHandler<CreateRequestCommand, ResponseModel>
     {
         private readonly IRequestDbContext _context;

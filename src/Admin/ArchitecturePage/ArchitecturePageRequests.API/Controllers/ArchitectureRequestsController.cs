@@ -2,9 +2,7 @@
 using ArchitecturePageRequests.Application.UseCases.Queries;
 using ArchitecturePageRequests.Domain.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
 
 namespace ArchitecturePageRequests.API.Controllers
 {

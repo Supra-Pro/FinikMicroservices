@@ -1,11 +1,6 @@
 ﻿using MediatR;
 using Projects.Application.Abstractions;
 using Projects.Application.UseCases.ProjectCases.Queries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projects.Application.UseCases.ProjectCases.Handlers.QueryHandlers
 {
@@ -18,7 +13,7 @@ namespace Projects.Application.UseCases.ProjectCases.Handlers.QueryHandlers
             _context = context;
         }
 
-        public Task<List<string>> Handle(GetAllCategoriesQuery request,  CancellationToken cancellationToken)
+        public Task<List<string>> Handle(GetAllCategoriesQuery request, CancellationToken cancellationToken)
         {
             var categories = _context.Projects
                 .Select(x => x.Category)

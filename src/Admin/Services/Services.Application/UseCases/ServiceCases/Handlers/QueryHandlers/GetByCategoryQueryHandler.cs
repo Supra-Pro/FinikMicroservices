@@ -3,10 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Services.Application.Abstractions;
 using Services.Application.UseCases.ServiceCases.Queries;
 using Services.Domain.Entities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Services.Application.UseCases.ServiceCases.Handlers.QueryHandlers
 {
@@ -26,14 +22,14 @@ namespace Services.Application.UseCases.ServiceCases.Handlers.QueryHandlers
                 .Where(x => x.Category == request.Category)
                 .ToListAsync(cancellationToken);
 
-            
+
             var serviceModels = servicesByCategory.Select(x => new ServiceModel
             {
                 Id = x.Id,
                 Category = x.Category,
                 Title = x.Title,
                 Description = x.Description
-              
+
             }).ToList();
 
             return serviceModels;

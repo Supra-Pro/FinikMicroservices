@@ -2,7 +2,6 @@
 using ContactPageRequests.Application.UseCases.Queries;
 using ContactPageRequests.Domain.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContactPageRequests.API.Controllers

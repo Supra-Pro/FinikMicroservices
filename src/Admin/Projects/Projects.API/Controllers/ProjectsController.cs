@@ -1,12 +1,8 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projects.Application.UseCases.ProjectCases.Commands;
 using Projects.Application.UseCases.ProjectCases.Queries;
 using Projects.Domain.Eintities;
-using System.Diagnostics.CodeAnalysis;
-using System.Formats.Asn1;
-using System.Runtime.CompilerServices;
 
 namespace Projects.API.Controllers
 {
@@ -47,7 +43,7 @@ namespace Projects.API.Controllers
 
                 return Ok(projects);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 return StatusCode(500, $"error {ex.Message}");
             }

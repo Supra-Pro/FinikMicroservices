@@ -13,7 +13,7 @@ namespace Services.API
             // Add services to the container.
             builder.Services.AddServiceApplicationDependencyInjection();
             builder.Services.AddServiceInfrastructureDependencyInjection(builder.Configuration);
-            
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

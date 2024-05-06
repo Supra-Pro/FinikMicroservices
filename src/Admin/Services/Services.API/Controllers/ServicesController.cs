@@ -28,8 +28,8 @@ namespace Services.API.Controllers
         public async Task<ActionResult> GetAllServices()
         {
             var result = await _mediator.Send(new GetAllServicesQuery());
-            
-            return Ok(result);      
+
+            return Ok(result);
         }
 
         [HttpGet]
@@ -37,7 +37,7 @@ namespace Services.API.Controllers
         {
             try
             {
-                var query = new GetByCategoryQuery {Category = category };
+                var query = new GetByCategoryQuery { Category = category };
                 var services = await _mediator.Send(query);
 
                 return Ok(services);

@@ -71,29 +71,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArchitecturePage", "Archite
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactPage", "ContactPage", "{39223FCC-3E82-4CC6-A83C-036BE0F8F277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutPageRequests.API", "src\Admin\AboutPage\AboutPageRequests.API\AboutPageRequests.API.csproj", "{262982DC-99BC-451E-96AD-CCBEB61464FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AboutPageRequests.API", "src\Admin\AboutPage\AboutPageRequests.API\AboutPageRequests.API.csproj", "{262982DC-99BC-451E-96AD-CCBEB61464FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutPageRequests.Domain", "src\Admin\AboutPage\AboutPageRequests.Domain\AboutPageRequests.Domain.csproj", "{4859147E-7B0D-4FA6-BDCE-B1CFE12AD58F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AboutPageRequests.Domain", "src\Admin\AboutPage\AboutPageRequests.Domain\AboutPageRequests.Domain.csproj", "{4859147E-7B0D-4FA6-BDCE-B1CFE12AD58F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutPageRequests.Application", "src\Admin\AboutPage\AboutPageRequests.Application\AboutPageRequests.Application.csproj", "{D91EBD30-F740-4A07-996F-979A839ECE68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AboutPageRequests.Application", "src\Admin\AboutPage\AboutPageRequests.Application\AboutPageRequests.Application.csproj", "{D91EBD30-F740-4A07-996F-979A839ECE68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutPageRequests.Infrastructure", "src\Admin\AboutPage\AboutPageRequests.Infrastructure\AboutPageRequests.Infrastructure.csproj", "{76B98B42-A933-4801-BEB9-1EB92E9C35CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AboutPageRequests.Infrastructure", "src\Admin\AboutPage\AboutPageRequests.Infrastructure\AboutPageRequests.Infrastructure.csproj", "{76B98B42-A933-4801-BEB9-1EB92E9C35CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturePageRequests.API", "src\Admin\ArchitecturePage\ArchitecturePageRequests.API\ArchitecturePageRequests.API.csproj", "{3DAB57CE-9CF6-4417-BE58-49ACCDF8E0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitecturePageRequests.API", "src\Admin\ArchitecturePage\ArchitecturePageRequests.API\ArchitecturePageRequests.API.csproj", "{3DAB57CE-9CF6-4417-BE58-49ACCDF8E0FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturePageRequests.Domain", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Domain\ArchitecturePageRequests.Domain.csproj", "{118C2F48-A4DE-4130-8085-AE52239AF1DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitecturePageRequests.Domain", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Domain\ArchitecturePageRequests.Domain.csproj", "{118C2F48-A4DE-4130-8085-AE52239AF1DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturePageRequests.Application", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Application\ArchitecturePageRequests.Application.csproj", "{273292F6-6339-42CC-A47B-2404CBE19B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitecturePageRequests.Application", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Application\ArchitecturePageRequests.Application.csproj", "{273292F6-6339-42CC-A47B-2404CBE19B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturePageRequests.Infrastructure", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Infrastructure\ArchitecturePageRequests.Infrastructure.csproj", "{C7D00094-B31B-4997-94F2-96155435F338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitecturePageRequests.Infrastructure", "src\Admin\ArchitecturePage\ArchitecturePageRequests.Infrastructure\ArchitecturePageRequests.Infrastructure.csproj", "{C7D00094-B31B-4997-94F2-96155435F338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactPageRequests.API", "src\Admin\ContactPage\ContactPageRequests.API\ContactPageRequests.API.csproj", "{253EABE9-F5BF-4142-ABC4-CD3CAD172FB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactPageRequests.API", "src\Admin\ContactPage\ContactPageRequests.API\ContactPageRequests.API.csproj", "{253EABE9-F5BF-4142-ABC4-CD3CAD172FB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactPageRequests.Domain", "src\Admin\ContactPage\ContactPageRequests.Domain\ContactPageRequests.Domain.csproj", "{C40E9917-B691-44D8-9562-146EB1BEE1FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactPageRequests.Domain", "src\Admin\ContactPage\ContactPageRequests.Domain\ContactPageRequests.Domain.csproj", "{C40E9917-B691-44D8-9562-146EB1BEE1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactPageRequests.Application", "src\Admin\ContactPage\ContactPageRequests.Application\ContactPageRequests.Application.csproj", "{48A19354-6BFF-423D-A478-7B4F960AA9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactPageRequests.Application", "src\Admin\ContactPage\ContactPageRequests.Application\ContactPageRequests.Application.csproj", "{48A19354-6BFF-423D-A478-7B4F960AA9A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactPageRequests.Infrastructure", "src\Admin\ContactPage\ContactPageRequests.Infrastructure\ContactPageRequests.Infrastructure.csproj", "{471C2714-BA5B-4670-B592-14ABDB3B55AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactPageRequests.Infrastructure", "src\Admin\ContactPage\ContactPageRequests.Infrastructure\ContactPageRequests.Infrastructure.csproj", "{471C2714-BA5B-4670-B592-14ABDB3B55AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{6093C11D-D8EC-4390-BF7C-8CD1E734C8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Admin\Catalog\Catalog.API\Catalog.API.csproj", "{24A5F3E4-8D6B-489D-95D2-C23756E7BE90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Domain", "src\Admin\Catalog\Catalog.Domain\Catalog.Domain.csproj", "{E2D2D34D-C34B-40E1-9DF7-1346B36868DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "src\Admin\Catalog\Catalog.Application\Catalog.Application.csproj", "{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infrastructure", "src\Admin\Catalog\Catalog.Infrastructure\Catalog.Infrastructure.csproj", "{F70AE963-110D-497A-ADDE-62CF658B5D27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -233,6 +243,22 @@ Global
 		{471C2714-BA5B-4670-B592-14ABDB3B55AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471C2714-BA5B-4670-B592-14ABDB3B55AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471C2714-BA5B-4670-B592-14ABDB3B55AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A5F3E4-8D6B-489D-95D2-C23756E7BE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A5F3E4-8D6B-489D-95D2-C23756E7BE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A5F3E4-8D6B-489D-95D2-C23756E7BE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A5F3E4-8D6B-489D-95D2-C23756E7BE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D2D34D-C34B-40E1-9DF7-1346B36868DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D2D34D-C34B-40E1-9DF7-1346B36868DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D2D34D-C34B-40E1-9DF7-1346B36868DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D2D34D-C34B-40E1-9DF7-1346B36868DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70AE963-110D-497A-ADDE-62CF658B5D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70AE963-110D-497A-ADDE-62CF658B5D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70AE963-110D-497A-ADDE-62CF658B5D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70AE963-110D-497A-ADDE-62CF658B5D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +307,11 @@ Global
 		{C40E9917-B691-44D8-9562-146EB1BEE1FA} = {39223FCC-3E82-4CC6-A83C-036BE0F8F277}
 		{48A19354-6BFF-423D-A478-7B4F960AA9A3} = {39223FCC-3E82-4CC6-A83C-036BE0F8F277}
 		{471C2714-BA5B-4670-B592-14ABDB3B55AB} = {39223FCC-3E82-4CC6-A83C-036BE0F8F277}
+		{6093C11D-D8EC-4390-BF7C-8CD1E734C8D5} = {B195FD28-8F09-41E3-80B2-00B162BD7F0F}
+		{24A5F3E4-8D6B-489D-95D2-C23756E7BE90} = {6093C11D-D8EC-4390-BF7C-8CD1E734C8D5}
+		{E2D2D34D-C34B-40E1-9DF7-1346B36868DB} = {6093C11D-D8EC-4390-BF7C-8CD1E734C8D5}
+		{8AF63EDB-5DE0-4A89-93F2-2EA34885FFD5} = {6093C11D-D8EC-4390-BF7C-8CD1E734C8D5}
+		{F70AE963-110D-497A-ADDE-62CF658B5D27} = {6093C11D-D8EC-4390-BF7C-8CD1E734C8D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {727C526B-8C13-4EA2-92B7-A950CCFAE8F1}
