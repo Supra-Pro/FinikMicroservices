@@ -1,7 +1,7 @@
 # FinikMicroservices
 <h1>Contribution to exam</h1>
 Men bu examda asosan Backend tarafidan qarashdim. taxminan 80% backendini yozdim. Backend Barchasi CleanCode asosida, Microserviceslar asosida, CQRS Design Patternda, MediatR ishlatilgan holda ko'tarildi. CQRS Design Pattern asosida yozilgan API lar:<br>
-
+<br>
 1)AboutPage API<br>
 2)ArchitecturePage API<br>
 3)ContactPage API<br>
